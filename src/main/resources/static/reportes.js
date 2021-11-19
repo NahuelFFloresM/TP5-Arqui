@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     async function productoMasVendido(){
         try {
-            let r = await fetch(urlProducto + "masvendidos");
+            let r = await fetch(urlProducto + "masvendido");
             // let input = document.querySelector("#input-prod-mas-vendido-5");
             // input.innerHTML = "";
             let inputContainer = document.querySelector("#container-5");
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
             input.setAttribute('id', 'input-prod-mas-vendido-5');
             input.setAttribute('type', 'text');
             input.setAttribute('name','producto');
-            let json = await r.json(); //convertimos la respuesta en un json
+            let json = await r.json();
             console.log(json);
             input.value = json[0].nombre;
             inputContainer.appendChild(input);
