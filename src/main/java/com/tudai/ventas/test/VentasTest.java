@@ -17,7 +17,7 @@ public class VentasTest {
     public void altaProductoOK() {
         Producto puerro = new Producto(123, "puerro", 100, 10);
         productoController.addProducto(puerro);
-        assertEquals(puerro.getSerial(), productoController.getProductoById(123));
+        assertEquals(puerro, productoController.getProductoById(123).getBody());
     }
 
 
