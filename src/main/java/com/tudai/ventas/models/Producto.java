@@ -47,19 +47,23 @@ public class Producto {
 		this.precio = precio;
 	}
 
-//	public Producto(long serial, String nombre, Integer precio, long stock) {
-//		super();
-//		this.serial = serial;
-//		this.nombre = nombre;
-//		this.precio = precio;
-//		this.stock = stock;
-//	}
+	public Producto(long serial, String nombre, Integer precio, long stock) {
+		super();
+		this.serial = serial;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.stock = stock;
+	}
 	
 	public Producto(String nombre, Integer precio, long stock) {
 		super();
 		this.nombre = nombre;
 		this.precio = precio;
 		this.stock = stock;
+	}
+
+	public Long getSerial() {
+		return serial;
 	}
 
 	public String getNombre() {

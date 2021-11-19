@@ -44,7 +44,7 @@ public class Cliente {
 		this.ventas = new ArrayList<Ventas>();
 	}
 	
-	public Cliente(Long documento,String nombre, String apellido) {
+	public Cliente(Long documento, String nombre, String apellido) {
 		this.documento = documento;
 		this.nombre = nombre;
 		this.apellido = apellido;
