@@ -14,7 +14,7 @@
 	<name>spring</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -102,9 +102,14 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
-						<release>11</release>
+						<release>8</release>
 				</configuration>
 			</plugin>
+			<plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>3.0.3</version>
+      </plugin>
 		</plugins>
 	</build>
 
