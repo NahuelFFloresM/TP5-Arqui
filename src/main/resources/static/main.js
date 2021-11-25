@@ -1,7 +1,7 @@
 'use strict';
 
 //URL: Declaramos la variable global para usar la URL
-let url = "https://tp5-tudai.herokuapp.com"
+let url = "https://tp5-tudai.herokuapp.com/"
 let urlCliente = url + "cliente/"
 let urlProducto = url + "producto/"
 let urlVentas = url + "ventas/"
